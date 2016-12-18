@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Wheels()
+comment1.params=
+comment1.target=void\ stop()
+comment2.params=speed
+comment2.target=void\ setSpeed(int)
+comment3.params=speedLeft\ speedRight
+comment3.target=void\ setSpeed(int,\ int)
+comment4.params=speed
+comment4.target=void\ setSpeedLeft(int)
+comment5.params=speed
+comment5.target=void\ setSpeedRight(int)
+comment6.params=
+comment6.target=void\ turnRightOnAxle()
+comment7.params=
+comment7.target=void\ turnLeftOnAxle()
+numComments=8

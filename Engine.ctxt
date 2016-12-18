@@ -1,0 +1,32 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Engine()
+comment0.text=\r\n\ In\ de\ contructor\ worden\ de\ benodigdheden\ aangemaakt\ om\ de\ engine\ goed\ te\ kunnen\ besturen.\r\n\ De\ standard\ speed\ is\ de\ standaard\ snelheid\ die\ de\ BoeBot\ zal\ rijden.Dit\ is\ NIET\ de\ maximumsnelheid.\r\n\ De\ maximumsnelheid\ van\ de\ BoeBot\ staat\ standaard\ op\ 1700,\ wat\ in\ deze\ code\ omgezet\ word\ naar\ 200.\r\n\ De\ currentSpeed\ houd\ de\ huidige\ snelheid\ van\ de\ BoeBot\ bij,\ zodat\ er\ dynamisch\ gebruik\ kan\ worden\ gemaakt\ van\ een\ versneller.\r\n\ De\ speedIncrease\ is\ de\ snelheid\ waarmee\ de\ BoeBot\ word\ verhoogd\ zolang\ hij\ op\ een\ recht\ stuk\ rijd.\r\n
+comment1.params=standardSpeed
+comment1.target=Engine(int)
+comment1.text=\r\n\ In\ de\ contructor\ worden\ de\ benodigdheden\ aangemaakt\ om\ de\ engine\ goed\ te\ kunnen\ besturen.\r\n\ De\ standard\ speed\ is\ de\ standaard\ snelheid\ die\ de\ BoeBot\ zal\ rijden.\ Deze\ word\ aangegeven\ met\ een\ parameter.\ Dit\ is\ NIET\ de\ maximumsnelheid.\r\n\ De\ maximumsnelheid\ van\ de\ BoeBot\ staat\ standaard\ op\ 1700,\ wat\ in\ deze\ code\ omgezet\ word\ naar\ 200.\r\n\ De\ currentSpeed\ houd\ de\ huidige\ snelheid\ van\ de\ BoeBot\ bij,\ zodat\ er\ dynamisch\ gebruik\ kan\ worden\ gemaakt\ van\ een\ versneller.\r\n\ De\ speedIncrease\ is\ de\ snelheid\ waarmee\ de\ BoeBot\ word\ verhoogd\ zolang\ hij\ op\ een\ recht\ stuk\ rijd.\r\n
+comment2.params=
+comment2.target=boolean\ followLine()
+comment2.text=\r\n\ 0\ \=\ Alle\ sensoren\ zien\ wit\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -rechtdoor\r\n\ 3\ \=\ linker\ sensor\ ziet\ zwart\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -naar\ rechts\ bijsturen\r\n\ 5\ \=\ middelste\ sensor\ ziet\ zwart\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -rechtdoor\r\n\ 7\ \=\ rechter\ sensor\ ziet\ zwart\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -naar\ links\ bijsturen\r\n\ 8\ \=\ midden\ en\ links\ zien\ zwart\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -een\ beetje\ naar\ rechts\ bijsturen\r\n\ 10\ \=\ links\ en\ rechts\ zien\ zwart\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -niet\ mogelijk\r\n\ 12\ \=\ midden\ en\ rechts\ zien\ zwart\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -een\ beetje\ naar\ links\ bijsturen\r\n\ 15\ \=\ Alle\ sensoren\ zien\ zwart\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -op\ een\ kruising\r\n
+comment3.params=
+comment3.target=void\ goForwardFaster()
+comment3.text=\r\n\ Elke\ keer\ dat\ deze\ methode\ word\ aangeroepen\ gaat\ de\ Boebot\ een\ klein\ beetje\ sneller.\r\n\ Uitgaande\ van\ een\ wait\ van\ 10\ in\ de\ main\ loop,\ en\ een\ increase\ van\ 1,\ zal\ de\ BoeBot\ om\ maximale\ snelheidzijn\ in\ -->\ (1*100)\ *\ 10\ \=\ 1000\ ms\ -->\ in\ ongeveer\ 1\ seconden.\r\n\ Zodra\ een\ methode\ word\ aangeroepen\ waarin\ de\ BoeBot\ niet\ meer\ rechtdoor\ gaat\ zal\ de\ snelheid\ worden\ gereset\ naar\ de\ standaart\ snelheid\ van\ 100\r\n
+comment4.params=
+comment4.target=void\ speedReset()
+comment4.text=\r\n\ Deze\ methode\ reset\ de\ currentSpeed\ weer\ naar\ de\ standaard\ snelheid.\r\n\ Deze\ methode\ word\ bij\ elke\ andere\ methode\ aangeroepen\ die\ de\ BoeBot\ iets\ anders\ laat\ doen\ dan\ rechtdoorrijden.\r\n
+comment5.params=
+comment5.target=void\ goForward()
+comment5.text=\r\n\ Laat\ de\ BoeBot\ met\ de\ standaard\ snelheid\ vooruit\ rijden.\r\n
+comment6.params=
+comment6.target=void\ goBackward()
+comment6.text=\r\n\ Laat\ de\ BoeBot\ met\ de\ standaard\ snelheid\ achteruit\ rijden.\r\n
+comment7.params=
+comment7.target=void\ stop()
+comment7.text=\r\n\ Laat\ de\ BoeBot\ stoppen\r\n
+comment8.params=
+comment8.target=void\ adjustToLeft()
+comment8.text=\r\n\ stuurt\ de\ BoeBot\ bij\ naar\ links,\ door\ 1\ servo\ op\ de\ standaard\ snelheid\ te\ zetten\ en\ de\ andere\ op\ 10%\ van\ de\ standaard\ snelheid.\r\n
+comment9.params=
+comment9.target=void\ adjustToRight()
+comment9.text=\r\n\ stuurt\ de\ BoeBot\ bij\ naar\ rechts,\ door\ 1\ servo\ op\ de\ standaard\ snelheid\ te\ zetten\ en\ de\ andere\ op\ 10%\ van\ de\ standaard\ snelheid.\r\n
+numComments=10
