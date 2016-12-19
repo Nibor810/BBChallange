@@ -6,8 +6,10 @@ public class Engine
 {
     private Wheels wheels;
     private LineSensor lineSensor;
+    
     private final int standardSpeed;
     private final int maxSpeed;
+    
     private int currentSpeed;
     private int speedIncrease;
     
@@ -68,7 +70,7 @@ public class Engine
             case 8:     adjustToRight();    break;
             case 12:    adjustToLeft();     break;
             case 15:    stop();             return true;
-            default:    goForwardFaster();  break;
+            default:    break;              //goForwardFaster();
         }
         return false;
     }
@@ -112,7 +114,7 @@ public class Engine
     }
     
     /**
-     * Laat de BoeBot stoppen
+     * Laat de BoeBot stoppen.
      */
     public void stop(){
         wheels.stop();
